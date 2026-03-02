@@ -4,6 +4,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Stack } from 'expo-router';
 
 import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
+import '@/database';
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
