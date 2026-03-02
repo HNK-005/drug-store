@@ -1,15 +1,18 @@
-import { Stack } from 'expo-router';
+import { Stack, useSegments } from 'expo-router';
 
 import { StyleSheet, View } from 'react-native';
 
 import { ScreenContent } from '@/components/ScreenContent';
 
 export default function Home() {
+  const segments = useSegments();
+  const path = 'app/' + segments.join('/') + '.tsx';
+
   return (
     <>
       <Stack.Screen options={{ title: 'Tab Two' }} />
       <View style={styles.container}>
-        <ScreenContent path="app/(tabs)/two.tsx" title="Tab Two" />
+        <ScreenContent path={path} title="Tab Two" />
       </View>
     </>
   );
