@@ -1,8 +1,8 @@
 import { Stack } from 'expo-router';
 import { Alert } from 'react-native';
 
-import { Form } from '@/components/form/medicine';
-import { MedicineFormOutput } from '@/components/form/medicine/validate';
+import { Form } from '@/components/medicine/form';
+import { MedicineFormOutput } from '@/services/medicine/validate';
 import { ThemeToggle } from '@/components/ThemeToggle';
 
 import ImageProvider from '@/services/image/image-provider';

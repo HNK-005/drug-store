@@ -30,7 +30,11 @@ import { Icon } from '@/components/ui/icon';
 import { LoadingOverlay } from '@/components/loading/loading-overlay';
 
 import { ImageContext } from '@/services/image/image-context';
-import { MedicineFormInput, MedicineFormOutput, MedicineSchema } from './validate';
+import {
+  MedicineFormInput,
+  MedicineFormOutput,
+  MedicineSchema,
+} from '../../services/medicine/validate';
 import { formatCurrencyVN } from '@/services/helpers/currency-VN';
 
 type FormProps = {

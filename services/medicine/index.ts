@@ -1,5 +1,5 @@
-import { MedicineFormOutput } from '@/components/form/medicine/validate';
 import { database } from '@/database';
+import { MedicineFormOutput } from '@/services/medicine/validate';
 import MedicineService from '@/database/services/MedicineService';
 import UnitService from '@/database/services/UnitService';
 
